@@ -1,0 +1,77 @@
+{
+  "id": "tools/kitware/cmake",
+  "version": "3.27.0",
+  "summary": "Kitware's cmake tool",
+  "description": "CMake is an open-source, cross-platform family of tools designed to build, test and package software. CMake is used to control the software compilation process using simple platform and compiler independent configuration files, and generate native makefiles and workspaces that can be used in the compiler environment of your choice. The suite of CMake tools were created by Kitware in response to the need for a powerful, cross-platform build environment for open-source projects such as ITK and VTK.",
+  "contacts": {
+    "Garrett Serack": {
+      "email": "garretts@microsoft.com",
+      "role": "publisher"
+    },
+    "Kitware": {
+      "email": "kitware@kitware.com",
+      "role": "originator"
+    }
+  },
+  "demands": {
+    "windows and x64": {
+      "install": {
+        "unzip": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-windows-x86_64.zip",
+        "sha256": "fc5f901ef4d438eafbe35b24c608d5de11e517f157b3b7ab8ebbaa7c3c0171d2",
+        "strip": 1
+      }
+    },
+    "windows and x86": {
+      "install": {
+        "unzip": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-windows-i386.zip",
+        "sha256": "bb3c3ca83be02a410b10393d563ec1e83d2048fea5eb35e88efe5c75e239dac3",
+        "strip": 1
+      }
+    },
+    "windows": {
+      "exports": {
+        "tools": {
+          "cmake": "bin/cmake.exe",
+          "cmake_gui": "bin/cmake-gui.exe",
+          "ctest": "bin/ctest.exe"
+        },
+        "paths": {
+          "PATH": "bin"
+        }
+      }
+    },
+    "osx": {
+      "install": {
+        "untar": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-macos-universal.tar.gz",
+        "sha256": "35a5995e27975d0e57742a468c8bfde5152263f2a526313fa9046346957c34be",
+        "strip": 3
+      }
+    },
+    "linux and x64": {
+      "install": {
+        "untar": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-linux-x86_64.tar.gz",
+        "sha256": "89c7e74d29f442e4734954310e09dd12d13636991f2d90d0ed1bececb8bf9b9c",
+        "strip": 1
+      }
+    },
+    "linux and arm64": {
+      "install": {
+        "untar": "https://github.com/Kitware/CMake/releases/download/v3.27.0/cmake-3.27.0-linux-aarch64.tar.gz",
+        "sha256": "97c2f8cf9e063a7acf9f15ed472d87c511bf5cb62d3e42b9c90524fb0c2e4748",
+        "strip": 1
+      }
+    },
+    "not windows": {
+      "exports": {
+        "tools": {
+          "cmake": "bin/cmake",
+          "cmake_gui": "bin/cmake-gui",
+          "ctest": "bin/ctest"
+        },
+        "paths": {
+          "PATH": "bin"
+        }
+      }
+    }
+  }
+}
