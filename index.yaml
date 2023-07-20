@@ -1,0 +1,66 @@
+items:
+  [
+    compilers/arm/gcc/xpack-gcc-12.2.1-1.2.json,
+    tools/cmake/cmake-3.25.2.json,
+    tools/ninja-build/ninja-1.11.1.json
+  ]
+indexes:
+  IdentityKey/id:
+    keys:
+      compilers/arm/gcc: [ 0 ]
+      tools/kitware/cmake: [ 1 ]
+      tools/ninja-build/ninja: [ 2 ]
+    words:
+      arm: [ 0 ]
+      arm/gcc: [ 0 ]
+      build: [ 2 ]
+      build/ninja: [ 2 ]
+      cmake: [ 1 ]
+      compilers: [ 0 ]
+      compilers/arm: [ 0 ]
+      compilers/arm/gcc: [ 0 ]
+      gcc: [ 0 ]
+      kitware: [ 1 ]
+      kitware/cmake: [ 1 ]
+      ninja: [ 2 ]
+      ninja-build: [ 2 ]
+      ninja-build/ninja: [ 2 ]
+      tools: [ 1, 2 ]
+      tools/kitware: [ 1 ]
+      tools/kitware/cmake: [ 1 ]
+      tools/ninja: [ 2 ]
+      tools/ninja-build: [ 2 ]
+      tools/ninja-build/ninja: [ 2 ]
+  SemverKey/version:
+    keys:
+      1.11.1: [ 2 ]
+      3.25.2: [ 1 ]
+      12.2.1-1.2: [ 0 ]
+  StringKey/summary:
+    keys:
+      GCC compiler for ARM CPUs.: [ 0 ]
+      Kitware's cmake tool: [ 1 ]
+      Ninja is a small build system with a focus on speed.: [ 2 ]
+    words:
+      ARM: [ 0 ]
+      CPUs: [ 0 ]
+      CPUs.: [ 0 ]
+      GCC: [ 0 ]
+      Kitware: [ 1 ]
+      Kitware's: [ 1 ]
+      Ninja: [ 2 ]
+      a: [ 2 ]
+      build: [ 2 ]
+      cmake: [ 1 ]
+      compiler: [ 0 ]
+      focus: [ 2 ]
+      for: [ 0 ]
+      is: [ 2 ]
+      on: [ 2 ]
+      s: [ 1 ]
+      small: [ 2 ]
+      speed: [ 2 ]
+      speed.: [ 2 ]
+      system: [ 2 ]
+      tool: [ 1 ]
+      with: [ 2 ]
